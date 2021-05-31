@@ -4,7 +4,7 @@
   "description": "Website bán giày thể thao ",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node app/src/index.js",
     "header": "node-sass --w src/resources/scss/header.scss src/public/css/header.css",
     "home": "node-sass --w src/resources/scss/home.scss src/public/css/home.css",
     "product": "node-sass --w src/resources/scss/product.scss src/public/css/product.css",
