@@ -10,7 +10,7 @@ header {
     width: 100%;
     background: #fff;
     position: relative;
-
+    margin: auto;
 }
 header .top {
     display: flex;
@@ -175,9 +175,7 @@ header .bottom ul a li{
         width: 65px;
         font-size: 13px;
     }
-    .icon .fa {
-        visibility: hidden;
-    }
+   
     .search {
         position: absolute;
         left: 70%;
@@ -198,15 +196,28 @@ header .bottom ul a li{
         margin-left: 3px;
         width: 60px;
     }
-    .icon .fa {
-        visibility: hidden;
-    }
-    .search {
-        visibility: hidden;
-    }
+  
 }
 @media (max-width: 376px) {
+    body {
+        width: 100%;
+    }
     header .bottom ul{
         display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .menu {
+            left:  30px;
+    }
+    .icon {
+      
+        right: 15px;
+    }
+    .search {
+        
+        left: 22%;
+        
     }
 }

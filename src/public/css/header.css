@@ -7,7 +7,8 @@ header {
   height: 70px;
   width: 100%;
   background: #fff;
-  position: relative; }
+  position: relative;
+  margin: auto; }
 
 header .top {
   display: flex;
@@ -145,8 +146,6 @@ header .bottom ul a li {
     margin-left: 5px;
     width: 65px;
     font-size: 13px; }
-  .icon .fa {
-    visibility: hidden; }
   .search {
     position: absolute;
     left: 70%;
@@ -161,12 +160,18 @@ header .bottom ul a li {
     left: 10%; }
   header .bottom ul a {
     margin-left: 3px;
-    width: 60px; }
-  .icon .fa {
-    visibility: hidden; }
-  .search {
-    visibility: hidden; } }
+    width: 60px; } }
 
 @media (max-width: 376px) {
+  body {
+    width: 100%; }
   header .bottom ul {
-    display: none; } }
+    display: none; }
+  .logo {
+    display: none; }
+  .menu {
+    left: 30px; }
+  .icon {
+    right: 15px; }
+  .search {
+    left: 22%; } }
