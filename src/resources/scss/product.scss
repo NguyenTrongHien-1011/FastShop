@@ -1,12 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-
-
 * {
     margin: 0;
     padding: 0;
-    
-   
 }
 $color: #fff;
 $bgred: #CC0000;
@@ -274,5 +270,37 @@ a {
         
         visibility: hidden;
     }
+    
+}
+@media (max-width: 376px) {
+    body {
+        width: 100%;
+    }
+    .product {
+        width :100%;
+        margin: 0;
+        padding: 0;
+    }
+    .product .content {
+        width :100%;
+    }
+    .product .device {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .device .bottom p.txt {
+        
+        visibility: hidden;
+    }
+    .product .image {
+        width: 100%;
+        height: 100px;
+        background: url(https://thumbs.dreamstime.com/z/image-text-shoes-illustration-hanging-shoelaces-78720648.jpg);
+        background-size: 100% 120%;
+        background-repeat: no-repeat;
+       
+        
+     }
     
 }

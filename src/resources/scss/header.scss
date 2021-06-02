@@ -34,10 +34,20 @@ header .bottom {
     top: 20px;
     left: 0;
 }
+.menu {
+    color:
+        #fff;
+    
+        margin-top: 15px;
+        font-size: 23px;
+        position: absolute;
+        left: 310px;
+        cursor: pointer;
+}
 .bottom .logo  {
    width :100px;
    height: 100%;
-   margin-left: 48px;
+   margin-left: 200px;
    
 }
 .bottom .logo img {
@@ -49,7 +59,7 @@ header .bottom ul{
     display: flex;
     position: absolute;
     list-style: none;
-    left: 20%;
+    left: 22%;
     text-transform: uppercase;
 }
 header .bottom ul a{
@@ -83,7 +93,7 @@ header .bottom ul a li{
 .icon {
     position: absolute;
     top: 0;
-    right: 150px;
+    right: 230px;
    
     display: flex;
     
@@ -193,5 +203,10 @@ header .bottom ul a li{
     }
     .search {
         visibility: hidden;
+    }
+}
+@media (max-width: 376px) {
+    header .bottom ul{
+        display: none;
     }
 }
