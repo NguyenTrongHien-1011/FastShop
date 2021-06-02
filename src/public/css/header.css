@@ -226,8 +226,6 @@ header .bottom ul a li {
     width: 60px; } }
 
 @media (max-width: 500px) {
-  body {
-    width: 100%; }
   header {
     width: 100%; }
   header .bottom ul {
@@ -239,7 +237,7 @@ header .bottom ul a li {
   .icon {
     right: 15px; }
   .search {
-    left: 22%; }
+    left: 70px; }
   #show {
     position: absolute;
     left: 20px;
