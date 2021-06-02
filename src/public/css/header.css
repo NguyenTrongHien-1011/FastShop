@@ -36,7 +36,7 @@ header .bottom {
 
 #sub-menu {
   width: 70%;
-  height: 586px;
+  height: 650px;
   position: relative;
   top: 50px;
   left: 0;
@@ -45,7 +45,7 @@ header .bottom {
 #sub-menu:after {
   content: '';
   width: 100%;
-  height: 580px;
+  height: 650px;
   position: absolute;
   top: 0;
   left: 0;
@@ -90,7 +90,7 @@ header .bottom {
   margin-top: 15px;
   font-size: 23px;
   position: absolute;
-  left: 310px;
+  left: 30px;
   cursor: pointer;
   transition: 0.5s;
   display: none; }
@@ -146,10 +146,9 @@ header .bottom ul a li {
 
 .fa-search {
   position: absolute;
-  top: 5px;
+  top: 7px;
   right: 10px;
-  color: #CC0000;
-  cursor: pointer; }
+  color: #CC0000; }
 
 .fa-cog {
   animation: rotate  10s linear infinite;
@@ -226,6 +225,8 @@ header .bottom ul a li {
     width: 60px; } }
 
 @media (max-width: 500px) {
+  body {
+    width: 100%; }
   header {
     width: 100%; }
   header .bottom ul {
@@ -237,10 +238,6 @@ header .bottom ul a li {
   .icon {
     right: 15px; }
   .search {
-    left: 70px; }
+    left: 22%; }
   #show {
-    position: absolute;
-    left: 20px;
-    cursor: pointer;
-    transition: 0.5s;
     display: block; } }

@@ -49,7 +49,7 @@ a {
 }
 .product .device .bottom {
     width: 100%;
-    height: 150px;
+    height: 170px;
     background: black;
     color: rgb(253, 253, 253);
    
@@ -59,25 +59,23 @@ a {
     margin: auto;
 }
 .device .bottom h2 {
-    
     color: $bgred;
     font-size: 34px;
     position: relative;
     margin-bottom: 20px;
-    padding-top: 10px;
 }
 .device .bottom h2:after {
     content: '';
    position: absolute;
    bottom: 0;
    left: 0;
-   width: 10%;
+   width: 7%;
    height: 3px;
    background: $bgred;
     color: $bgred;
 }
-.device .bottom .text p {
-    width :100%;
+.device .bottom p {
+    width: 100%;
 }
 h1.tt {
     text-align: center;
@@ -106,7 +104,6 @@ h1.tt:after {
     margin: auto; 
     margin-top: 0px;
     background-color: rgb(248, 248, 248);
-    box-shadow: 1px 2px 5px rgb(255, 255, 255);
 }
 .product .prd {
     width: 200px;
@@ -311,18 +308,8 @@ h1.tt:after {
 }
 @media (max-width: 500px) {
     
-    .product {
-        width :100% ;
-    }
-    .product .content {
-        width :100%;
-        background-color: #fff;
-    }
-    .product .device {
-        width: 100%;
-        height: 110px;
-    }
     
+   
     .device .bottom p.txt {
         
         display: none;
@@ -354,8 +341,8 @@ h1.tt:after {
     .product .prd {
         width: 165px;
         height: 240px;
-        margin-left:   20px;
-        margin-right: 0px;
+        margin-left:   0px;
+        margin-right: 22px;
         margin-top: 10px;
         margin-bottom: 10px;
         position: relative;
@@ -445,7 +432,9 @@ h1.tt:after {
     height: 80px;
 }
 .bottom .text {
+    width: 100% ;
+}
+h1.tt {
     width: 100%;
-    margin-left: 30px;
 }
 }
