@@ -159,5 +159,10 @@
     left: 63%; }
   .footer-distributed .footer-left .footer-links {
     position: absolute;
-    top: 60%;
-    left: 33%; } }
+    top: 55%;
+    left: 20px; }
+  .footer-company-name {
+    position: absolute;
+    top: 80%;
+    left: 120px;
+    color: #fff; } }

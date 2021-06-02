@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 * {
   margin: 0;
   padding: 0; }
@@ -183,7 +182,7 @@ h1.tt:after {
   width: 100%;
   text-align: center;
   font-size: 15px;
-  height: 42px;
+  height: 35px;
   display: inline-block;
   word-wrap: break-word;
   overflow: hidden;
@@ -335,7 +334,7 @@ h1.tt:after {
     width: 100%; }
   .box .brand {
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 0;
     width: 100%; }
   .prd:hover .addtocard {
@@ -346,4 +345,12 @@ h1.tt:after {
     transform: translateX(230px);
     opacity: 1; }
   .prd .view {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .box .brand:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: gray;
+    top: 20px;
+    left: 0px; } }
