@@ -299,6 +299,7 @@ h1.tt:after {
     margin-top: 0;
     margin-left: 10px;
     position: relative;
+    transform: translate(10px);
     box-sizing: border-box;
     top: 10%;
     background-color: #f8f8f8;
@@ -329,7 +330,7 @@ h1.tt:after {
     width: 100%;
     margin-left: 0; }
   .box .img img {
-    width: 175px;
+    width: 165px;
     height: 150px;
     position: absolute;
     top: 0;
