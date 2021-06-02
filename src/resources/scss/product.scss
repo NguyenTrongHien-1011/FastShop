@@ -21,7 +21,7 @@ a {
    width: 100%;
    height: 300px;
    background: url(https://thumbs.dreamstime.com/z/image-text-shoes-illustration-hanging-shoelaces-78720648.jpg);
-   background-size: 100% 130%;
+   background-size: 100% 120%;
    background-repeat: no-repeat;
   
    
@@ -52,11 +52,12 @@ a {
    
 }
 .device .bottom h2 {
-    margin-left: 15%;
+    
     color: $bgred;
     font-size: 34px;
     position: relative;
     margin-bottom: 20px;
+    margin-left: 12%;
 }
 .device .bottom h2:after {
     content: '';
@@ -69,8 +70,7 @@ a {
     color: $bgred;
 }
 .device .bottom p {
-    margin-left: 15%;
-    width: 1050px;
+    margin-left: 12%;
 }
 h1.tt {
     text-align: center;
@@ -85,7 +85,7 @@ h1.tt:after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 15%;
+    left: 17%;
     width: 250px;
     height: 2px;
     background-color: #CC0000;
@@ -93,7 +93,7 @@ h1.tt:after {
 
 .product .content {
     width: 1050px;
-    height: 170%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: auto; 
@@ -149,7 +149,7 @@ h1.tt:after {
 }
 .content .box .size span {
     margin-right: 0px;
-    font-size: 13px;
+    font-size: 12px;
     width: 100%;
 }
  .content .box .size  .cricle{
@@ -328,7 +328,7 @@ h1.tt:after {
     }
     .product .image {
         width: 100%;
-        height: 130px ;
+        height: 120px ;
         background-size: 100% 120%;
      }
      .device .bottom h2 {
@@ -345,17 +345,19 @@ h1.tt:after {
     }
     .product .prd {
         width: 160px;
-        height: 270px;
+        height: 290px;
         margin-left:   15px;
         margin-right: 12px;
         margin-top: 10px;
+        margin-bottom: 10px;
         position: relative;
         top: 10%;
         background-color: rgb(248, 248, 248);
     }
     .product .prd:after 
 {
-    width: 163%;
+    bottom: -10px;
+    width: 175%;
     left: -100px;
 }
 .product .box {
@@ -379,7 +381,7 @@ h1.tt:after {
  }
  .content .box .size span {
     margin-right: 0px;
-    font-size: 13px;
+    font-size: 12px;
     width: 100%;
     margin-left: 0 ;
 }
