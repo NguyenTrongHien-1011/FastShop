@@ -11,7 +11,15 @@ header {
     background: #fff;
     position: relative;
     margin: auto;
+    position: fixed;
+    z-index: 1;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
 header .top {
     display: flex;
     height: 20px ;
@@ -35,7 +43,7 @@ header .bottom {
     left: 0;
 }
 #sub-menu {
-    width: 130px;
+    width: 200px;
     height: 100%;
     position: relative;
     top: 50px;
@@ -45,8 +53,8 @@ header .bottom {
 }
 .a1 {
 
-    width: 130px;
-    height: 30px;
+    width: 200px;
+    height: 50px;
     background-color: #fff;
     border: 1px solid rgba(128, 128, 128, 0.432);
     display: flex;
