@@ -17,7 +17,15 @@
        
       </div>
       <div class="bottom">
-        <i class="menu fa fa-bars" aria-hidden="true" style="font-size: 23px"></i>
+        <i class="menu fa fa-bars" aria-hidden="true" style="font-size: 23px" id="show"></i>
+        <div id="sub-menu">
+          <div class="mn1"><a href="/">Home</a></div>
+          <div class="mn1"><a href="/products">SHOP</a></div>
+          <div class="mn1"><a href="/aboutUs">ABOUT US</a></div>
+          <div class="mn1"><a href="/contact">CONTACT</a></div>
+          <div class="mn1"><a href="/location">LOCATION</a></div>
+         
+        </div>
         <div class="logo">
           <a href="/"><img src="/img/background2.png" alt=""></a>
         </div>
@@ -39,13 +47,16 @@
       </div>
     </header>
     <script>
-      function myFunction(element, clr) {
-          element.style.color = clr;
-}
-      function changeTxt() {
-        document.getElementById('#radi1').checked;
-        document.getElementById("txt1").innerHTML = "Paragraph changed!";
-      }
+     document.getElementById("show").onclick = function() {myFunction()};
+
+    function myFunction() {
+         var x = document.getElementById("sub-menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+        }
     </script>
 </body>
 </html>

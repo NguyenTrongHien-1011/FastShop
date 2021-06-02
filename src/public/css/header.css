@@ -31,6 +31,34 @@ header .bottom {
   top: 20px;
   left: 0; }
 
+#sub-menu {
+  width: 150px;
+  height: 100%;
+  background-color: #49e6e6;
+  position: relative;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  display: none; }
+
+.mn1 {
+  width: 200px;
+  height: 30px;
+  background-color: #f0f3f7;
+  border: 1px solid red; }
+
+.sub-menu a {
+  text-decoration: none;
+  color: #faf2f2;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 10px; }
+
+.sub-menu a:hover {
+  background-color: #e84118; }
+
 .menu {
   color: #fff;
   margin-top: 15px;
