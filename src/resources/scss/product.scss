@@ -181,7 +181,7 @@ h1.tt:after {
 }
 
 
-.box:hover .addtocard{
+.prd:hover .addtocard{
     position: absolute;
    right: 45px;
     opacity: 1;
@@ -189,10 +189,8 @@ h1.tt:after {
    
     
 }
-.box:hover .view{
-    position: absolute;
-    left: 0px;
-    top: 50%;
+.prd:hover .view{
+   
     transform: translateX(250px);
     opacity: 1;
     
@@ -345,7 +343,7 @@ h1.tt:after {
     }
     .product .prd {
         width: 160px;
-        height: 290px;
+        height: 240px;
         margin-left:   15px;
         margin-right: 12px;
         margin-top: 10px;
@@ -353,6 +351,7 @@ h1.tt:after {
         position: relative;
         top: 10%;
         background-color: rgb(248, 248, 248);
+        position: relative;
     }
     .product .prd:after 
 {
@@ -362,11 +361,13 @@ h1.tt:after {
 }
 .product .box {
     width: 160px;
+    height: 240px;
     display: flex;
     overflow: hidden;
    
-    position: relative;
-    top: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .content .box .size  .cricle-size{
     position: absolute;
@@ -394,8 +395,23 @@ h1.tt:after {
 }
 .box .name {
     position: absolute;
-    bottom: 35px;
+    bottom: 0px;
     left: 0;
     width: 100%;
+}
+.box .brand {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+.prd:hover .addtocard{
+    position: absolute;
+   right: 45px;
+    opacity: 1;
+}
+.prd:hover .view{
+    transform: translateX(230px);
+    opacity: 1;
 }
 }
