@@ -245,10 +245,15 @@ a {
     width: 100%;
     height: 60px; }
   .device .bottom p.txt {
-    visibility: hidden; }
+    display: none; }
+  .device .bottom p.p1 {
+    margin-top: 0;
+    margin-bottom: 20px; }
   .product .image {
     width: 100%;
     height: 120px;
-    background: url(https://thumbs.dreamstime.com/z/image-text-shoes-illustration-hanging-shoelaces-78720648.jpg);
-    background-size: 100% 120%;
-    background-repeat: no-repeat; } }
+    background-size: 100% 120%; }
+  .device .bottom h2 {
+    margin-bottom: 10px; }
+  .device .bottom h2:after {
+    width: 30%; } }
