@@ -13,11 +13,6 @@ header {
   position: fixed;
   z-index: 3; }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%; }
-
 header .top {
   display: flex;
   height: 20px;
@@ -40,28 +35,38 @@ header .bottom {
   left: 0; }
 
 #sub-menu {
-  width: 200px;
-  height: 100%;
+  width: 300px;
+  height: 556px;
   position: relative;
   top: 50px;
   left: 0;
-  z-index: 2;
   display: none; }
 
+#sub-menu:after {
+  content: '';
+  width: 300px;
+  height: 556px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #CC0000;
+  opacity: 0.9;
+  z-index: -1; }
+
 .a1 {
-  width: 200px;
+  width: 250px;
   height: 50px;
-  background-color: #fff;
-  border: 1px solid rgba(128, 128, 128, 0.432);
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-left: 50px;
   text-decoration: none;
-  color: #000; }
+  color: #fff;
+  border-bottom: 1px dashed black; }
 
-.a1:hover {
-  background-color: #e84118;
-  color: #fff; }
+.a1:hover span {
+  color: #fff;
+  margin-left: 50px;
+  transform: scale(1.2); }
 
 .sub-menu a:hover {
   background-color: #e84118; }
