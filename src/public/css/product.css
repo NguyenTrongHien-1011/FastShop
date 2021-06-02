@@ -59,13 +59,30 @@ a {
   margin-left: 15%;
   width: 1050px; }
 
+h1.tt {
+  text-align: center;
+  width: 1050px;
+  margin: auto;
+  padding-top: 20px;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow: hidden; }
+
+h1.tt:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 250px;
+  height: 2px;
+  background-color: #CC0000; }
+
 .product .content {
   width: 1050px;
   height: 170%;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  margin-bottom: 50px;
   margin-top: 0px;
   background-color: #f8f8f8;
   box-shadow: 1px 2px 5px white; }
@@ -74,7 +91,8 @@ a {
   width: 200px;
   height: 300px;
   margin-left: 50px;
-  margin-top: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   position: relative;
   top: 10%; }
 
@@ -110,13 +128,16 @@ a {
   top: 5%;
   left: 0; }
 
+.content .box .size .cricle-size {
+  display: flex; }
+
 .content .box .size span {
   margin-right: 0px;
   font-size: 13px;
   width: 100%; }
 
 .content .box .size .cricle {
-  width: 40px;
+  width: 20px;
   height: 20px;
   border-radius: 50%;
   background: #CC0000;
@@ -161,7 +182,7 @@ a {
 
 .box .name {
   position: absolute;
-  bottom: 0px;
+  bottom: -5px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -249,7 +270,8 @@ a {
   .product {
     width: 100%; }
   .product .content {
-    width: 100%; }
+    width: 100%;
+    background-color: #fff; }
   .product .device {
     width: 100%;
     height: 110px; }
@@ -266,12 +288,47 @@ a {
     margin-bottom: 10px; }
   .device .bottom h2:after {
     width: 30%; }
+  h1.tt {
+    width: 100%; }
   .product .prd {
-    width: 250px;
-    margin-left: 90px;
-    margin-top: 20px;
+    width: 160px;
+    height: 270px;
+    margin-left: 15px;
+    margin-right: 12px;
+    margin-top: 10px;
+    position: relative;
+    top: 10%;
+    background-color: #f8f8f8; }
+  .product .prd:after {
+    width: 163%;
+    left: -100px; }
+  .product .box {
+    width: 160px;
+    display: flex;
+    overflow: hidden;
     position: relative;
     top: 10%; }
-  .product .prd:after {
-    width: 153%;
-    left: -100px; } }
+  .content .box .size .cricle-size {
+    position: absolute;
+    right: 10px; }
+  .content .box .size .cricle {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    margin: 0 3px; }
+  .content .box .size span {
+    margin-right: 0px;
+    font-size: 13px;
+    width: 100%;
+    margin-left: 0; }
+  .box .img img {
+    width: 160px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .box .name {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%; } }
