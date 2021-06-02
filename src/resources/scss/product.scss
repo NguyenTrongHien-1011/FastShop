@@ -407,11 +407,14 @@ h1.tt:after {
 }
 .prd:hover .addtocard{
     position: absolute;
-   right: 45px;
+   right: 30px;
     opacity: 1;
 }
 .prd:hover .view{
     transform: translateX(230px);
     opacity: 1;
+}
+.prd .view{
+    margin-bottom: 15px;
 }
 }
