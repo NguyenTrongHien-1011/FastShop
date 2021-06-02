@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 1s;
 }
 $color: #fff;
 $bgred: #CC0000;
@@ -50,6 +51,7 @@ header .bottom {
     left: 0;
     z-index: 2;
     display: none;
+    
 }
 .a1 {
 
@@ -75,14 +77,13 @@ color: #fff;
     background-color: #e84118;
 }
 .menu {
-    color:
-        #fff;
-    
+        color:#fff;
         margin-top: 15px;
         font-size: 23px;
         position: absolute;
         left: 310px;
         cursor: pointer;
+        transition: 0.5s;
 }
 .bottom .logo  {
    width :100px;

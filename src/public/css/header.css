@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: 1s; }
 
 header {
   height: 70px;
@@ -71,7 +72,8 @@ header .bottom {
   font-size: 23px;
   position: absolute;
   left: 310px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.5s; }
 
 .bottom .logo {
   width: 100px;
