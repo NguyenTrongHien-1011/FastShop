@@ -12,7 +12,7 @@ header {
     position: relative;
     margin: auto;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
 }
 .sticky {
     position: fixed;
@@ -48,7 +48,7 @@ header .bottom {
     position: relative;
     top: 50px;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 .a1 {
