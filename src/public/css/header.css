@@ -162,7 +162,7 @@ header .bottom ul a li {
     margin-left: 3px;
     width: 60px; } }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
   body {
     width: 100%; }
   header .bottom ul {
