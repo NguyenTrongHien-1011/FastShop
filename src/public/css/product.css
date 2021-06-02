@@ -237,22 +237,18 @@ a {
     visibility: hidden; } }
 
 @media (max-width: 376px) {
-  body {
-    width: 100%; }
   .product {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
+    width: 100%; }
   .product .content {
     width: 100%; }
   .product .device {
     width: 100%;
-    height: 100px; }
+    height: 60px; }
   .device .bottom p.txt {
     visibility: hidden; }
   .product .image {
     width: 100%;
-    height: 100px;
+    height: 120px;
     background: url(https://thumbs.dreamstime.com/z/image-text-shoes-illustration-hanging-shoelaces-78720648.jpg);
     background-size: 100% 120%;
     background-repeat: no-repeat; } }
