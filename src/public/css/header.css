@@ -85,14 +85,15 @@ header .bottom {
 .sub-menu a:hover {
   background-color: #e84118; }
 
-.menu {
+#show {
   color: #fff;
   margin-top: 15px;
   font-size: 23px;
   position: absolute;
   left: 310px;
   cursor: pointer;
-  transition: 0.5s; }
+  transition: 0.5s;
+  display: none; }
 
 .bottom .logo {
   width: 100px;
@@ -142,6 +143,13 @@ header .bottom ul a li {
   color: #fff;
   font-size: 23px;
   align-items: center; }
+
+.fa-search {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #CC0000;
+  cursor: pointer; }
 
 .fa-cog {
   animation: rotate  10s linear infinite;
@@ -231,4 +239,10 @@ header .bottom ul a li {
   .icon {
     right: 15px; }
   .search {
-    left: 22%; } }
+    left: 22%; }
+  #show {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: block; } }
