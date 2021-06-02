@@ -35,32 +35,32 @@ header .bottom {
     left: 0;
 }
 #sub-menu {
-    width: 150px;
+    width: 130px;
     height: 100%;
-    background-color: rgb(73, 230, 230);
     position: relative;
     top: 50px;
     left: 0;
     z-index: 1;
     display: none;
 }
+.a1 {
 
-.mn1 {
-    width: 200px;
+    width: 130px;
     height: 30px;
-    background-color: #f0f3f7;
-    border: 1px solid red;
-}
-.sub-menu a{
-   
+    background-color: #fff;
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    color: rgb(250, 242, 242);
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-top: 10px;
+    color: #000;
 }
+.a1:hover {
+background-color: #e84118;
+color: #fff;
+}
+
+
 
 
 .sub-menu a:hover{
