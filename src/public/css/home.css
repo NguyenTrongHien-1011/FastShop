@@ -132,7 +132,7 @@
 
 @media (max-width: 415px) {
   .content {
-    min-height: 67vh;
+    min-height: 67.5vh;
     width: 100%;
     display: flex;
     justify-content: center;
