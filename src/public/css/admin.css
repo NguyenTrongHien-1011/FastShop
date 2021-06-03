@@ -151,7 +151,9 @@ table th {
   .a {
     height: 60px;
     width: 100px; }
-  .a h3 {
-    font-size: 13px; }
-  .a p {
-    font-size: 17px; } }
+  .row h3 {
+    font-size: 13px;
+    display: none; }
+  .row p {
+    font-size: 13px;
+    margin-left: -5px; } }
