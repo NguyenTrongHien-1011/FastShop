@@ -147,7 +147,7 @@ span.star {
     width: 100%;
     margin-bottom: 30px;
     color: black;
-    margin-left: 10px; }
+    margin-left: 30px; }
   .left .inputBox input {
     height: 40px;
     background: #f5f1f1;
@@ -177,5 +177,78 @@ span.star {
     text-align: center;
     width: 300px;
     height: 50px;
-    margin-left: 35px;
+    margin-left: 55px;
+    margin-bottom: 150px; } }
+
+@media (max-width: 376px) {
+  .left .inputBox {
+    width: 100%;
+    margin-bottom: 30px;
+    color: black;
+    margin-left: 12px; }
+  .left .inputBox input {
+    height: 40px;
+    background: #f5f1f1;
+    border: none;
+    border: 0.5px solid gray; }
+  .content .left:hover {
+    background: #fff;
+    color: #c40606; }
+  .left button {
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    margin-left: 40px;
+    margin-bottom: 150px; } }
+
+@media (max-width: 361px) {
+  .left .inputBox {
+    width: 100%;
+    margin-bottom: 30px;
+    color: black;
+    margin-left: 5px; }
+  .left .inputBox input {
+    height: 40px;
+    background: #f5f1f1;
+    border: none;
+    border: 0.5px solid gray; }
+  .content .left:hover {
+    background: #fff;
+    color: #c40606; }
+  .left button {
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    margin-left: 30px;
+    margin-bottom: 150px; } }
+
+@media (max-width: 321px) {
+  .left .inputBox {
+    width: 100%;
+    margin-bottom: 30px;
+    color: black;
+    margin-left: 10px; }
+  .left .inputBox input {
+    height: 40px;
+    background: #f5f1f1;
+    border: none;
+    border: 0.5px solid gray; }
+  #firstname {
+    width: 120px; }
+  #lastname {
+    width: 120px; }
+  #email {
+    width: 300px; }
+  #message {
+    width: 300px; }
+  #add {
+    width: 300px; }
+  .content .left:hover {
+    background: #fff;
+    color: #c40606; }
+  .left button {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 60px;
     margin-bottom: 150px; } }
