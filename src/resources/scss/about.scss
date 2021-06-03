@@ -9,12 +9,15 @@ body {
     box-sizing: inherit;
   }
   .content {
-    min-height: 90vh;
+    position: relative;
+    top: 50px;
+
   }
   .row {
     display: flex;
     width :100%;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   .column {
     float: left;
@@ -22,8 +25,6 @@ body {
     margin-bottom: 16px;
     margin-left: 30px;
     padding: 0 8px;
-   
-   
   }
   
   .card {
@@ -74,9 +75,40 @@ body {
     background-color: #555;
   }
   
-  @media screen and (max-width: 650px) {
+  @media (max-width: 415px) {
+    .content {
+      position: relative;
+      top: 50px;
+    }
+    .row {
+      display: block;
+      width :100%;
+      margin-top: 0px;
+      margin-left: -28px;
+      margin-bottom: 50px;
+    }
     .column {
       width: 100%;
-      display: block;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 100%;
+    }
+    .container {
+    }
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 103%;
+      margin-left: -13px;
+      text-decoration: none;
     }
   }

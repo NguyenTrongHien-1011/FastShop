@@ -113,7 +113,7 @@ $bgred: #CC0000;
 .adress p {
     margin-bottom: 10px;
     width: 100%;
-    padding-left: 60px;
+    padding-left: 50px;
 }
 @media (max-width: 415px ) {
     .content {
@@ -182,5 +182,17 @@ $bgred: #CC0000;
         margin-left: 0 ;
         margin-top: -30px;
         margin-bottom: -30px  ;
+    }
+    
+}
+@media (max-width: 361px) {
+    .adress p {
+        margin-bottom: 10px;
+        width: 100%;
+        padding-left: 40px;
+    }
+    .txt .left {
+        width: 100%;
+        padding-left: 10px;
     }
 }
