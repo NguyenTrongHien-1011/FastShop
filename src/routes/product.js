@@ -14,7 +14,6 @@ router.delete('/:id/force', productController.deleteForever)
 //router.get('/cart', productController.cart)
 router.post('/store', productController.store)
 router.get('/:slug', productController.show)
-
 router.get('/', productController.product)
 
 module.exports = router

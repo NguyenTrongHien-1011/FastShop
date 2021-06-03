@@ -19,6 +19,7 @@ class AdminController {
         .catch(error => next(error))
         
     }
+  
     
 }
 module.exports = new AdminController

@@ -74,7 +74,7 @@
 			{{!-- end row 1 --}}
 		<div class="content">
 			<div class="left">
-				<div id="product" style="">
+				<div id="product">
 					<div class="card">
 						<div class="card-header">
 							<h3>
@@ -101,7 +101,7 @@
 										<td>{{this.price}}$</td>
 										<td class="time-product">@{{this.createdAt}}</td>
 										<td>
-										<a href="/admin/{{this._id}}/#edit" class="btn btn-link">Edit</a>
+										<a href="/admin/{{this._id}}" class="btn btn-link">Edit</a>
 										<a  href="" class="btn btn-link" data-toggle="modal" data-target="#deleteProduct" data-id="{{this._id}}">Delete</a>
 										</td>
 									</tr>
