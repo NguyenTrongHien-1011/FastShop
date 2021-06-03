@@ -1,26 +1,32 @@
 .admin {
-	min-height: 100vh;
+	min-height: 100%;
+	position: relative;
+	top: 60px;
 }
-.wrapper {
-	padding: 10px;
-	padding-top: 75px;
-	background: var(--second-bg-color);
-	transition: margin-left .5s;
-}
+ 
 
-.row {
+.btn {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	
 }
-
+.btn-product {
+	width: 50%;
+}
+input[type="submit"] {
+	transform: translate(170px );
+	height: 30px;
+	width: 100px;
+	background-color: red;
+	color: #fff ;
+}
 .counter p {
 	margin-left: 0;
 }
 .box .pr1 {
 	width: 100%;
 	margin-left: 0px;
+	position: relative;
 }
 .box .pr2 {
 	width: 100%;
@@ -51,7 +57,7 @@
 	padding: 16px;
 	text-align: center;
 	color: #fff;
-	border-radius: 10px;
+	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -162,43 +168,8 @@ table th {
 	.time, .time-product {
 		display: none;
 	}
-	.box {
-		width: 100%;
-	}
-	.card-content .inputBox {
-		width: 100%;
-	}
-	.pr1 {
-		width: 100px; 
-	}
-	.pr1 .card {
-		width: 100%;
-	}
-	.pr2  {
-		width: 410px;
-	}
-	.pr2 .card {
-		width: 100%;
-	}
-	.pr3  {
-		width: 100%;
-	}
-	.pr3 .card {
-		width: 100%;
-	}
-	.card-content .inputBox {
-		width: 100%;
-	}
-	.card-content .inputBox input {
-		width: 100%;
-	}
-	.card-content .inputBox textarea {
-		width: 100%;
-	}
-	.a {
-		height: 60px;
-		width: 100px;
-	}
+
+	
 	.row h3{
 		font-size: 13px;
 		display: none;
@@ -207,5 +178,24 @@ table th {
 		font-size: 13px;
 		margin-left: -5px;
 	}
-	
+	.top {
+		position: relative;
+		margin-bottom: 100px;
+	}
+	.btn-product {
+		width: 50%;
+	}
+	input[type="submit"] {
+		transform: translate(140px );
+	}
+}
+@media (max-width: 376px) {
+	input[type="submit"] {
+		transform: translate(110px );
+	}
+}
+@media (max-width: 321px) {
+	input[type="submit"] {
+		transform: translate(90px );
+	}
 }

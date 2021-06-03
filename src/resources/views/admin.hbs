@@ -19,9 +19,9 @@
 </head>
 <body>
 	<div class="admin">
-			<div class="wrapper">
-			<div class="row">
-				<div class="col-3 col-m-6 col-sm-6">
+			<div class="top">
+			<div class="btn">
+				<div class="btn-product btn1">
 					<a   href="#product" style="text-decoration: none;">
 					<div class="counter bg-primary">
 						<p>
@@ -33,7 +33,7 @@
 					</a>
 					
 				</div>
-				<div class="col-3 col-m-6 col-sm-6">
+				<div class="btn-product btn2">
 					<a  href="#add" style="text-decoration: none;">
 					<div class="counter bg-warning">
 						<p>
@@ -45,7 +45,7 @@
 					</a>
 					
 				</div>
-				<div class="col-3 col-m-6 col-sm-6">
+				<div class="btn-product btn3">
 					<a  href="#edit" style="text-decoration: none;">
 						<div class="counter bg-success">
 						<p>
@@ -57,7 +57,7 @@
 					</a>
 					
 				</div>
-				<div class="col-3 col-m-6 col-sm-6">
+				<div class="btn-product btn4">
 					<a  href="#delete" style="text-decoration: none;">
 						<div class="counter bg-danger">
 						<p>
@@ -101,7 +101,7 @@
 										<td>{{this.price}}$</td>
 										<td class="time-product">@{{this.createdAt}}</td>
 										<td>
-										<a href="/admin/{{this._id}}" class="btn btn-link">Edit</a>
+										<a href="/admin/{{this._id}}" class="btn btn-link" >Edit</a>
 										<a  href="" class="btn btn-link" data-toggle="modal" data-target="#deleteProduct" data-id="{{this._id}}">Delete</a>
 										</td>
 									</tr>
@@ -148,7 +148,7 @@
 									</div>
 									<div class="inputBox">
 										<label for="">description</label>
-									<textarea name="Description" id="" ></textarea>
+										<textarea name="Description" id="" ></textarea>
 									
 									</div>
 				
