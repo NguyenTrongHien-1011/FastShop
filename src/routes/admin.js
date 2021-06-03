@@ -8,6 +8,6 @@ const adminController = require('../app/controllers/AdminController')
 //router.get('/search', siteController.search)
 
 router.get('/', adminController.admin)
-router.get('/:id/', adminController.admin)
+router.get('/:id/#edit', adminController.admin)
 
 module.exports = router

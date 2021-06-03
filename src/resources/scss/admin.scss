@@ -3,7 +3,6 @@
 }
 .wrapper {
 	padding: 10px;
-
 	padding-top: 75px;
 	background: var(--second-bg-color);
 	transition: margin-left .5s;
@@ -16,6 +15,23 @@
 	
 }
 
+.counter p {
+	margin-left: 0;
+}
+.box .pr1 {
+	width: 100%;
+	margin-left: 0px;
+}
+.box .pr2 {
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+.box .pr3 {
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 20px;
+}
 .row:after, .row:before {
 	box-sizing: border-box;
 }
@@ -25,96 +41,11 @@
 }
 
 /* Extra small devices <= 600px */
-@media only screen and (max-width: 600px) {
-	.sidebar {
-		width: 0;
-	}
-	.wrapper {
-		margin-left: 0;
-	}
-	.sidebar-expand .wrapper {
-		margin-left: 0;
-	}
-	.nav-right .nav-item {
-		display: none;
-	}
-	.nav-right .mode, .nav-right .avt-wrapper {
-		display: list-item;;
-	}
-	.navbar-search {
-		display: none;
-	}
-	.dropdown-menu {
-		max-width: 300px;
-	}
-	[class*="col-"] {
-		width: 100%
-	}
-}
 
-/* Small devices >= 600px */
-@media only screen and (min-width: 600px) {
-	.col-sm-1 {width: 8.33%;}
-	.col-sm-2 {width: 16.66%;}
-	.col-sm-3 {width: 25%;}
-	.col-sm-4 {width: 33.33%;}
-	.col-sm-5 {width: 41.66%;}
-	.col-sm-6 {width: 50%;}
-	.col-sm-7 {width: 58.33%;}
-	.col-sm-8 {width: 66.66%;}
-	.col-sm-9 {width: 75%;}
-	.col-sm-10 {width: 83.33%;}
-	.col-sm-11 {width: 91.66%;}
-	.col-sm-12 {width: 100%;}
-}
 
-/* Medium devices >= 768px */
-@media only screen and (min-width: 768px) {
-	.col-m-1 {width: 8.33%;}
-	.col-m-2 {width: 16.66%;}
-	.col-m-3 {width: 25%;}
-	.col-m-4 {width: 33.33%;}
-	.col-m-5 {width: 41.66%;}
-	.col-m-6 {width: 50%;}
-	.col-m-7 {width: 58.33%;}
-	.col-m-8 {width: 66.66%;}
-	.col-m-9 {width: 75%;}
-	.col-m-10 {width: 83.33%;}
-	.col-m-11 {width: 91.66%;}
-	.col-m-12 {width: 100%;}
-}
 
-/* laptops/desktops >= 992px */
-@media only screen and (min-width: 992px) {
-	.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
-}
 
 /* large laptops and desktops >= 1200px */
-@media only screen and (min-width: 1200px) {
-	.col-xl-1 {width: 8.33%;}
-	.col-xl-2 {width: 16.66%;}
-	.col-xl-3 {width: 25%;}
-	.col-xl-4 {width: 33.33%;}
-	.col-xl-5 {width: 41.66%;}
-	.col-xl-6 {width: 50%;}
-	.col-xl-7 {width: 58.33%;}
-	.col-xl-8 {width: 66.66%;}
-	.col-xl-9 {width: 75%;}
-	.col-xl-10 {width: 83.33%;}
-	.col-xl-11 {width: 91.66%;}
-	.col-xl-12 {width: 100%;}
-}
 
 .counter {
 	padding: 16px;
@@ -173,42 +104,24 @@ table {
 
 table td {
 	border-top: 1px solid var(--second-bg-color);
+	border-bottom: 1px solid var(--second-bg-color);
 	padding: 15px;
 }
-
-table th {
+tr {
+	border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+}
+table th { 
 	border-top: 1px solid var(--second-bg-color);
 	border-bottom: 1px solid var(--second-bg-color);
 	padding: 15px 12px;
 	text-align: left;
 }
 
-.dot i {
-	display: inline-block;
-	width: .385rem;
-	height: .385rem;
-	margin-right: .385rem;
-	vertical-align: middle;
-	border-radius: 50%;
-}
 
 
 
-.float-right {
-	float: right;
-}
 
-.progress {
-	height: 10px;
-	overflow: hidden;
-	display: flex;
-	font-size: .75rem;
-	background: rgba(0,0,0,0.05);
-	border-radius: .25rem;
-	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
-
-
+ 
 
 
 .card-content .inputBox {
@@ -232,7 +145,67 @@ table th {
 	
 }
 .content {
-	
 	width: 100%;
 	display: flex;
+}
+@media (max-width: 415px) {
+	.content {
+		display: inline-block;
+	}
+	.content .right{
+		 width: 100%;
+	}
+	.content .left{
+		width :100%;
+		margin-left: 0;
+	}
+	.time, .time-product {
+		display: none;
+	}
+	.box {
+		width: 100%;
+	}
+	.card-content .inputBox {
+		width: 100%;
+	}
+	.pr1 {
+		width: 100px; 
+	}
+	.pr1 .card {
+		width: 100%;
+	}
+	.pr2  {
+		width: 410px;
+	}
+	.pr2 .card {
+		width: 100%;
+	}
+	.pr3  {
+		width: 100%;
+	}
+	.pr3 .card {
+		width: 100%;
+	}
+	.card-content .inputBox {
+		width: 100%;
+	}
+	.card-content .inputBox input {
+		width: 100%;
+	}
+	.card-content .inputBox textarea {
+		width: 100%;
+	}
+	.a {
+		height: 60px;
+		width: 100px;
+	}
+	.a h3{
+		font-size: 13px;
+	}
+	.a p{
+		font-size: 17px;
+	}
+	.row  .col-3{
+		
+	}
 }

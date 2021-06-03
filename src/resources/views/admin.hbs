@@ -22,7 +22,7 @@
 			<div class="wrapper">
 			<div class="row">
 				<div class="col-3 col-m-6 col-sm-6">
-					<a  href="#product" style="text-decoration: none;">
+					<a   href="#product" style="text-decoration: none;">
 					<div class="counter bg-primary">
 						<p>
 							<i class="fas fa-tasks"></i>
@@ -68,12 +68,13 @@
 					</div>
 					</a>
 				</div>
-			</div>
+				{{!-- end row 1  --}}
+			
 		</div>	
 			{{!-- end row 1 --}}
 		<div class="content">
 			<div class="left">
-				<div id="product" style="margin-left: 50px;">
+				<div id="product" style="">
 					<div class="card">
 						<div class="card-header">
 							<h3>
@@ -87,8 +88,10 @@
 									<tr>
 										<th scope="col">#</th>
 										<th scope="col">Name product</th>
-										<th scope="col">Price</th>
-										<th scope="col" colspan="2" style="text-align: center;">Time create</th>
+										<th scope="col" colspan="0">Price</th>
+										<th scope="col" colspan="0" class="time">Time create</th>
+										<th scope="col" colspan="0" class="fc">Fuction</th>
+
 									</tr>
 								</thead>
 								{{#each products}}
@@ -96,9 +99,9 @@
 										<th scope="row">{{sum @index 1}}</th>
 										<td>{{this.name}}</td>
 										<td>{{this.price}}$</td>
-										<td>@{{this.createdAt}}</td>
+										<td class="time-product">@{{this.createdAt}}</td>
 										<td>
-										<a href="/admin/{{this._id}}" class="btn btn-link">Edit</a>
+										<a href="/admin/{{this._id}}/#edit" class="btn btn-link">Edit</a>
 										<a  href="" class="btn btn-link" data-toggle="modal" data-target="#deleteProduct" data-id="{{this._id}}">Delete</a>
 										</td>
 									</tr>
@@ -113,7 +116,7 @@
 				{{!-- ende left  --}}
 			<div class="right">
 				<div class="box">
-					<div class="pr1" id="add" style="width: 550px;margin-left: 30px;">
+					<div class="pr1" id="add">
 							<div class="card">
 								<div class="card-header">
 									<h3>
@@ -149,12 +152,12 @@
 									
 									</div>
 				
-									<input type="submit" value="Create" style="margin: 30px 0 10px 50%">
+									<input type="submit" value="Create" >
 							</form>
 							</div>
 						</div>	
 						{{!-- end pr1 --}}
-						<div class="pr2" id="edit" style="width: 550px;margin-top: 10px;" id="delete">
+						<div class="pr2" id="edit" id="delete">
 							<div class="card">
 								<div class="card-header">
 									<h3>
@@ -184,12 +187,12 @@
 										<label for="">Description</label>
 									 	<textarea name="description" id="" >{{productEdit.description}}</textarea>
 									</div>
-									<input type="submit" value="Edit" style="margin: 30px 0 10px 50%">
+									<input type="submit" value="Edit" >
 							</form>
 								</div>
 							</div>
 						</div>		
-						<div class="pr3" style="width: 550px;margin-top: 10px;" id="delete">
+						<div class="pr3" id="delete">
 							<div class="card">
 								<div class="card-header">
 									<h3>
@@ -203,7 +206,8 @@
 											<tr>
 												<th scope="col">#</th>
 												<th scope="col">Name product</th>
-												<th scope="col">Price</th>
+												<th scope="col" >Price</th>
+												<th scope="col" >Function</th>
 				
 											</tr>
 										</thead>
