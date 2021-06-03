@@ -6,7 +6,7 @@ const adminController = require('../app/controllers/AdminController')
 
 
 //router.get('/search', siteController.search)
-router.get('/:id/#edit', adminController.admin)
+router.get('/:id', adminController.admin)
 router.get('/', adminController.admin)
 
 
