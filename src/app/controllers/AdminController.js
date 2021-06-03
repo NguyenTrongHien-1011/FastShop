@@ -13,13 +13,9 @@ class AdminController {
             productEdit: mongooseToObject(productEdit),
             productDelete: muntipleMongooseToObject(productDelete),
             products: muntipleMongooseToObject(products),
-            
         })
         )
         .catch(error => next(error))
-        
     }
-  
-    
 }
 module.exports = new AdminController
