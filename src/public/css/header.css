@@ -246,3 +246,7 @@ header .bottom ul a li {
   .search {
     left: 21%;
     width: 140px; } }
+
+@media (max-width: 321px) {
+  .search {
+    display: none; } }

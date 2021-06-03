@@ -139,7 +139,7 @@
   margin-bottom: 5px; }
 
 /* If you don't want the footer to be responsive, remove these media queries */
-@media (max-width: 500px) {
+@media (max-width: 416px) {
   .footer-distributed {
     width: 100%;
     height: 250px; }
@@ -152,7 +152,9 @@
     text-align: left;
     margin-left: 15px; }
   .footer-distributed .footer-left img {
-    margin-left: 30px; }
+    position: absolute;
+    top: 20%;
+    left: 15%; }
   .footer-distributed .footer-left span {
     position: absolute;
     top: 40%;
@@ -160,10 +162,50 @@
   .footer-distributed .footer-left .footer-links {
     position: absolute;
     top: 55%;
-    left: 35px;
+    left: 15%;
+    font-size: 13px; }
+  .footer-company-name {
+    position: absolute;
+    top: 80%;
+    left: 130px;
+    color: #fff; } }
+
+@media (max-width: 376px) {
+  n .footer-distributed .footer-left img {
+    position: absolute;
+    top: 20%;
+    left: 10%; }
+  .footer-distributed .footer-left span {
+    position: absolute;
+    top: 40%;
+    left: 63%; }
+  .footer-distributed .footer-left .footer-links {
+    position: absolute;
+    top: 55%;
+    left: 10%;
     font-size: 13px; }
   .footer-company-name {
     position: absolute;
     top: 80%;
     left: 120px;
+    color: #fff; } }
+
+@media (max-width: 321px) {
+  .footer-distributed .footer-left img {
+    position: absolute;
+    top: 20%;
+    left: 2%; }
+  .footer-distributed .footer-left span {
+    position: absolute;
+    top: 40%;
+    left: 63%; }
+  .footer-distributed .footer-left .footer-links {
+    position: absolute;
+    top: 55%;
+    left: 4%;
+    font-size: 13px; }
+  .footer-company-name {
+    position: absolute;
+    top: 80%;
+    left: 100px;
     color: #fff; } }
