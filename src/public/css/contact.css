@@ -68,7 +68,7 @@
   height: 50px;
   margin-left: 60px;
   color: #fff;
-  background: -webkit-linear-gradient(left, #c03232, #241b1b);
+  background: -webkit-linear-gradient(left, #c03232, #231b1b);
   transition: 0.7s; }
 
 .left button:hover {
@@ -136,7 +136,7 @@ span.star {
   .content {
     display: inline-block;
     position: relative;
-    top: 20px;
+    top: 100px;
     height: 100%; }
   .left {
     width: 100%;
@@ -147,32 +147,35 @@ span.star {
     width: 100%;
     margin-bottom: 30px;
     color: black;
-    margin-left: 0px; }
+    margin-left: 10px; }
   .left .inputBox input {
-    width: 300px;
     height: 40px;
     background: #f5f1f1;
     border: none;
     border: 0.5px solid gray; }
   #firstname {
-    width: 150px; }
+    width: 140px; }
   #lastname {
-    width: 160px; }
+    width: 140px; }
   #email {
-    width: 375px; }
+    width: 350px; }
   #message {
-    width: 375px; }
+    width: 350px; }
   #add {
-    width: 375px; }
+    width: 350px; }
   .content .left:hover {
     background: #fff;
     color: #c40606; }
-  .title {
-    width: 300px;
-    margin-left: 100px; }
+  .left .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 30px;
+    display: none; }
   .left button {
     text-align: center;
     width: 300px;
     height: 50px;
     margin-left: 35px;
-    margin-bottom: 30px; } }
+    margin-bottom: 150px; } }
