@@ -57,7 +57,7 @@ $bgred: #CC0000;
 .content .title {
     position: absolute;
     top: 40%;
-    left: 0%;
+    left: 50%;
     transform: translate(-50%,-50%);
     width :100%;
     text-align: center;
@@ -163,7 +163,7 @@ $bgred: #CC0000;
 }
 @media (max-width: 415px) {
     .content {
-        min-height: 100vh;
+        min-height: 65vh;
         width: 100%;
         display: flex;
         justify-content: center;
