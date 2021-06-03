@@ -5,12 +5,13 @@
   width: 100%;
   height: 300px;
   background: url(https://www.toshiba.com/taes/cms_images/contact-us.jpg);
-  background-size: 130% 100%; }
+  background-size: 130% 100%;
+  position: relative; }
 
 .img::after {
   content: '';
   position: absolute;
-  top: 48%;
+  bottom: 0;
   left: 0px;
   width: 100%;
   height: 20px;
@@ -68,9 +69,9 @@
 .content::after {
   content: '';
   width: 70%;
-  height: 5px;
+  height: 1px;
   position: absolute;
-  bottom: -200px;
+  bottom: -130px;
   background-color: gray; }
 
 .map {
@@ -80,8 +81,8 @@
   margin: auto; }
 
 .map iframe {
-  width: 370px;
-  height: 370px;
+  width: 100%;
+  height: 400px;
   margin-left: 0px; }
 
 .adress {
@@ -91,7 +92,8 @@
   margin-left: 0px; }
 
 .adress h1 {
-  text-align: center; }
+  text-align: center;
+  color: #CC0000; }
 
 .box {
   display: flex;
@@ -103,6 +105,59 @@
   width: 50%; }
 
 .adress p {
-  margin-left: 50px;
   margin-bottom: 10px;
-  width: 100%; }
+  width: 100%;
+  padding-left: 60px; }
+
+@media (max-width: 415px) {
+  .content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .txt {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: auto;
+    position: relative;
+    margin-top: 20px; }
+  .txt .left {
+    width: 100%;
+    padding-left: 20px; }
+  .txt .right {
+    display: none; }
+  .txt::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    background-color: gray; }
+  .img::after {
+    height: 10px; }
+  .adress {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px; }
+  .adress::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -20px;
+    background-color: gray; }
+  .content::after {
+    display: none; }
+  .adress h1 {
+    text-align: center; }
+  .img {
+    width: 100%;
+    height: 200px; }
+  .map {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -30px;
+    margin-bottom: -30px; } }
