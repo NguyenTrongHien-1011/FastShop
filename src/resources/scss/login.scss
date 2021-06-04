@@ -1,101 +1,161 @@
+
 .content {
-    min-height: 90vh;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #03a9f4;
+    transition: 0.5s;
+    position: relative;
+    top : 50px;
+    z-index: 1;
 }
-.wrapper {
-    width: 400px;
-    height: 420px;
-    color: #000;
-    top: 50%;
-    left: 50%;
-    padding: 60px 30px;
+.content.active {
+    background-color: #f43648;
+}
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+.blueBg {
     position: absolute;
-    background: rgba(168, 134, 134, 0.411);
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    box-shadow: 8px 8px 50px #000;
-   
-}
-h1 {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 8%;
-    font-family: Courgette;
-}
-.wrapper input {
+    top: 40px;
     width: 100%;
-    margin-bottom: 20px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
 }
-.wrapper input[type=text], .wrapper input[type=password] {
-    border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
-    outline: none;
-    height: 30px;
-    font-size: 16px;
-    opacity: 1;
+.blueBg .box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blueBg .box h2 {
     color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
-.wrapper input[type=submit] {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #f664;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-}
-.wrapper input[type=submit]:hover {
+.blueBg .box  button{
     cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    border: none
 }
-.wrapper a {
-    font-size: 14px;;
-    text-decoration: none;
-    color: #fff;
-    opacity: 0.8;
+.formBx  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
 }
-.wrapper a:hover {
-    color: #fff;
-    opacity: 1;
+.formBx.active {
+    left: 50%;
 }
-.bottom-text {
-    color: #fff;
+.formBx .singinForm{
+    transition-delay: 0.25s;
 }
-.bottom-text input {
-    width: 10%;
-    float: left;
+.formBx .singupForm{
+    margin-left: 100%;
 }
-.bottom-text a {
-    
-    float: right;
+.formBx.active .singinForm{
+    transition-delay: 0s;
+    left: -100%;
 }
-.socials {
-   margin-top: 12%;
-   text-align: center; 
+.formBx.active .singupForm{
+    margin-left: 0%;
 }
-.socials a{
-   width: 30px;
-   height: 30px;
-   display: inline-block;
-   border: 1px solid #000;
-   border-radius: 50%;
-   margin: 0 5px;
+.formBx.active .singupForm button{
 }
-.socials a:nth-child(1){
-   background: #3b5998;
+
+
+.formBx .form {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
 }
-.socials a:nth-child(2){
-   background: #55acee;
+.formBx .form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.socials a:nth-child(3){
-   background: #bd081c;
+.formBx form h3{
+   font-size: 1.5em;
+   color: #333;
+   margin-bottom: 20px;
+   font-weight: 500;
+   text-align: center;
 }
-.socials a:nth-child(4){
-   background: #0077b5;
+.formBx form a{
+   text-decoration: none;
 }
-.socials a i {
-    padding: 8px 0;
+.formBx form input{
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 10px;
+   outline: none;
+   font-size: 16px;
+   border: 1px solid #333;
+}
+ input[type="submit"]{
+   background-color: #03a9f4;
+   border: none;
+   color: #fff;
+   width: 100px;
+   cursor: pointer;
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .blueBg {
+        top: 0;
+        height: 100%;
+    }
+    .formBx {
+        width: 100%;
+        height: 500px;
+        top :0;
+        box-shadow: none;
+    }
+    .blueBg .box {
+        position: absolute;
+        width: 100%; 
+        height: 150px;
+        bottom: 0;
+    }
+    .singin {
+        top :0
+    }
+    .formBx.active {
+        left: 0;
+        top :150px
+    } 
+
 }

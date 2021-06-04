@@ -37,7 +37,7 @@ a {
 
 .product .device .bottom {
   width: 100%;
-  height: 150px;
+  height: 130px;
   background: black;
   color: #fdfdfd; }
 
@@ -258,24 +258,6 @@ h1.tt:after {
   bottom: 0px;
   left: 0px; }
 
-@media (max-width: 1024px) {
-  .product .content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-top: 0px; }
-  .bottom p.txt {
-    display: none; }
-  .product .device .bottom {
-    width: 100%;
-    height: 100px;
-    background: black;
-    color: #fdfdfd; } }
-
 @media (max-width: 769px) {
   .product .content {
     width: 100%;
@@ -290,7 +272,9 @@ h1.tt:after {
     width: 100%;
     height: 100px;
     background: black;
-    color: #fdfdfd; } }
+    color: #fdfdfd; }
+  .device .bottom p.txt {
+    display: none; } }
 
 @media (max-width: 416px) {
   .product .device {
@@ -402,7 +386,7 @@ h1.tt:after {
     background: #CC0000; }
   .product .device .bottom {
     width: 100%;
-    height: 90px; }
+    height: 120px; }
   .bottom .text {
     width: 100%;
     padding-left: 50px;

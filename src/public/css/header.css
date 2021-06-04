@@ -289,9 +289,8 @@ header .bottom ul a li {
   .logo {
     display: none; }
   .search {
+    display: block;
     right: 35%; }
-  .search {
-    display: block; }
   #show {
     display: block; } }
 

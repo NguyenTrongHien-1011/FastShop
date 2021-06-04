@@ -6,29 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="content">
-        <div class="wrapper">
-        <h1>Sign in</h1>
-        <form action="">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <input type="submit" value="LOGIN">
-        </form>
-        <div class="bottom-text">
-            <input type="checkbox" name="remember" id="" checked="checked">Remember
-            <a href="">Forgot Pasworld</a>
+         <div class="container">
+        <div class="blueBg">
+            <div class="box singin">
+                <h2>Already have an account ?</h2>
+                <button class="singinBtn">Singin</button>
+            </div>
+            <div class="box singup">
+                <h2>Don't have an account ?</h2>
+                <button class="singupBtn">Singup</button>
+            </div>
         </div>
-        <div class="socials">
-            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <!-- end blueBg -->
+        <div class="formBx">
+           <div class="form singinForm">
+            <form action="">
+                <h3>Singin</h3>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Login">
+                <a href="" class="forgot">forgot password</a>
+            </form>
+           </div>
+           <div class="form singupForm">
+            <form action="">
+                <h3>Singup</h3>
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <input type="submit" value="Regiter">
+            </form>
+           </div>
         </div>
     </div>
     </div>
-    
+   
+    <script>
+        const singinBtn = document.querySelector('.singinBtn');
+        const singupBtn = document.querySelector('.singupBtn');
+        const formBx = document.querySelector('.formBx');
+        const body = document.querySelector('body');
+
+        singupBtn.onclick = function() {
+            formBx.classList.add('active');
+            body.classList.add('active');
+        }
+        singinBtn.onclick = function() {
+            formBx.classList.remove('active');
+            body.classList.remove('active');
+        }
+    </script>
 </body>
 </html>

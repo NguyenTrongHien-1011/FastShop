@@ -132,7 +132,7 @@ span.star {
   height: 1px;
   background: gray; }
 
-@media (max-width: 416px) {
+@media (max-width: 600px) {
   .content {
     display: inline-block;
     position: relative;
