@@ -276,8 +276,9 @@ h1.tt:after {
   .device .bottom p.txt {
     display: none; }
   .device .bottom h2:after {
-    width: 30%;
-    margin-bottom: 0; } }
+    width: 25%;
+    margin-bottom: 0;
+    margin-left: 0px; } }
 
 @media (max-width: 416px) {
   .product .device {
