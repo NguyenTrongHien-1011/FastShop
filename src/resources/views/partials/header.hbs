@@ -18,7 +18,7 @@
       <div class="bottom">
        <i class="fa fa-bars" aria-hidden="true" id="show"></i>
         <div id="sub-menu">
-            <a href="/" class="a1"><span>HOME</span></a> 
+            <a href="/" class="a1" ><span>HOME</span></a> 
             <a href="/products" class="a1"><span>SHOP</span></a> 
             <a href="/aboutUs" class="a1"><span>ABOUT US</span></a> 
             <a href="/contact" class="a1"><span>CONTACT</span></a> 
@@ -27,10 +27,10 @@
         </div>
         <div class="logo">
           <a href="/"><img src="/img/background2.png" alt=""></a>
-        </div>
+        </div class="menu">
         <ul>
-          <a href="/"><li>HOME</li></a>
-          <a href="/products"><li>SHOP</li></a>
+          <a href="/"  id="btn"><li>HOME</li></a>
+          <a href="/products" id="btn"><li>SHOP</li></a>
           <a href="/aboutUs"><li>About</li></a>
           <a href="/contact"><li>Contact</li></a>
           <a href="/location"><li>Location</li></a>
@@ -56,6 +56,11 @@
                 x.style.display = "block";
               }
         }
+
+
+    function red() {
+      document.getElementById('btn').style.background = "red";
+    }    
     </script>
     
 </body>

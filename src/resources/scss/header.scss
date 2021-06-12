@@ -136,6 +136,10 @@ header .bottom ul a{
     text-align: center;
     
 }
+header .bottom .menu ul a:active{
+    background-color: #CC0000;
+    
+}
 header .bottom ul a:hover {
     background-color: $bgred;
 }

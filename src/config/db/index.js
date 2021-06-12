@@ -4,7 +4,7 @@ async function connect() {
 
    
     try {
-        await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/DoAnCoSo1', {
+        await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/DoAnCoSo1', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
          useFindAndModify: false,

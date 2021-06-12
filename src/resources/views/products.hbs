@@ -11,7 +11,6 @@
   
   <div class="product">
       <div class="image">
-
         <img src="/img/item.jpg" alt="">
       </div>
       <div class="device">
@@ -27,6 +26,8 @@
          
         </div>
       </div>
+      {{!-- end  --}}
+      
       <h1 class="tt">TOP PRODUCTS</h1>
       <div class="content">
         
@@ -57,35 +58,12 @@
         </div>
        
            {{/each}}
-        {{#each products}}
-        <div class="prd">
-            <div class="box">
-           <div class="brand">Brand: {{this.brand}}</div>
-           <div class="size">
-             <span>Available size</span>
-             <div class="cricle-size">
-                <div class="cricle">S</div>
-                <div class="cricle">M</div>
-                <div class="cricle">L</div>
-             </div>
-            
-             
-           </div>
-           <div class="img">
-             <img src="{{this.image}}" alt="">
-           </div>
-           <div class="info">
-               <a href="/products/{{this.slug}}" class="view">View</a>
-               <a href="" class="addtocard">{{this.price}}$</a>
-           </div>
-           <div class="name">{{this.name}}</div>
-          
-         </div>
-        </div>
-       
-           {{/each}}
+      
       </div>
       <div class="end"></div>
+     
+      {{!-- èd  --}}
+      
   </div>
 </body>
 </html>

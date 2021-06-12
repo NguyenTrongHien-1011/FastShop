@@ -120,6 +120,9 @@ header .bottom ul a {
   height: 50px;
   text-align: center; }
 
+header .bottom .menu ul a:active {
+  background-color: #CC0000; }
+
 header .bottom ul a:hover {
   background-color: #CC0000; }
 
