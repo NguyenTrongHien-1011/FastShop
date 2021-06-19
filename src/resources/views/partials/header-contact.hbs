@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+     <header id="header">
+      <div class="top">
+
+        </div>
+      </div>
+      <div class="bottom">
+       <i class="fa fa-bars" aria-hidden="true" id="show"></i>
+        <div id="sub-menu">
+            <a href="/" class="a1" ><span>HOME</span></a> 
+            <a href="/products" class="a1"><span>SHOP</span></a> 
+            <a href="/aboutUs" class="a1"><span>ABOUT US</span></a> 
+            <a href="/contact" class="a1"><span>CONTACT</span></a> 
+            <a href="/location" class="a1"><span>LOCATION</span></a> 
+            <a href="/login" class="a1"><span>LOGIN</span></a> 
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/img/background2.png" alt=""></a>
+        </div class="menu">
+        <ul>
+          <a href="/"  id="btn"><li>HOME</li></a>
+          <a href="/products" id="btn"><li>SHOP</li></a>
+          <a href="/aboutUs"><li>About</li></a>
+          <a href="/contact"  style="background-color: #CC0000;"><li>Contact</li></a>
+          <a href="/location"><li>Location</li></a>
+        </ul>
+        <div class="search">
+          <input class="search-txt" type="text" placeholder="Type to search" value="">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <a href="/login"><i class="fa fa-user" aria-hidden="true"></i></a>
+          <a href="/admin"><i class="fa fa-cog"></i></a>
+        </div>
+      </div>
+    </header>
+    <script>
+     document.getElementById("show").onclick = function() {myFunction()};
+    function myFunction() {
+         var x = document.getElementById("sub-menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+        }
+
+
+    function red() {
+      document.getElementById('btn').style.background = "red";
+    }    
+    </script>
+    
+</body>
+</html>

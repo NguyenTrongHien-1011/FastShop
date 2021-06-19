@@ -110,6 +110,7 @@ h1.tt:after {
     flex-wrap: wrap;
     margin: auto; 
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 .product .prd {
     width: 200px;
@@ -195,10 +196,9 @@ h1.tt:after {
 
 
 .prd:hover .addtocard{
-    position: absolute;
-   right: 45px;
+   
+    transform: translateX(-250px);
     opacity: 1;
-    
    
     
 }
@@ -219,9 +219,10 @@ h1.tt:after {
     bottom: 0px;
     left: 0;
     width: 100%;
+
     text-align: center;
     font-size: 15px;
-    height: 36px;
+    height: 43px;
     display: inline-block;
     word-wrap: break-word;
      overflow:   hidden;

@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FastShop</title>
   <link rel="stylesheet" href="/css/product.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-  
+    {{> header-shop}}
   <div class="product">
       <div class="image">
         <img src="/img/item.jpg" alt="">
@@ -61,10 +63,27 @@
       
       </div>
       <div class="end"></div>
-     
       {{!-- èd  --}}
       
   </div>
+
+
+<script src="src/js/jquery-latest.min.js"></script>
+  <script>
+	$(".prd").slice(0, 5).show(); //showing 3 div
+
+	$(".loadMore").on("click",function(){
+		$(".prd:hidden").slice(0, 5).show(); //showing 3 hidden div on click
+    alert('ok');
+		if($(".prd:hidden").length ==0)
+		{
+			$(".loadMore").fadeOut(); //this will hide
+			//button when length is 0
+		}
+	})
+</script>
+
+
 </body>
 </html>
 

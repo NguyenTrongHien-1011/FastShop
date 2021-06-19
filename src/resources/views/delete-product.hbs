@@ -6,7 +6,8 @@
   	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="/css/admin.css">
+
+	<link rel="stylesheet" type="text/css" href="/css/admin2.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,19 +15,21 @@
     	<div class="sidebar">
 		<ul class="sidebar-nav">
 			<li class="sidebar-nav-item">
-				<a href="/admin" class="sidebar-nav-link active">
+				<a href="news.html" class="sidebar-nav-link">
 					<div>
 						<i class="fas fa-tachometer-alt"></i>
 					</div>
-						<span>My product</span>
+					<span>
+						Dashboard
+					</span>
 				</a>
 			</li>
 			<li class="sidebar-nav-item">
-				<a href="/admin/add" class="sidebar-nav-link ">
+				<a href="/admin" class="sidebar-nav-link active">
 					<div>
 						<i class="fab fa-accusoft"></i>
 					</div>
-					<span>Add new products</span>
+					<span>My product</span>
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
@@ -46,11 +49,11 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="/admin/products-deleted" class="sidebar-nav-link">
+				<a href="#" class="sidebar-nav-link">
 					<div>
 						<i class="fas fa-check-circle"></i>
 					</div>
-					<span>Product-deleted</span>
+					<span>Pellentesque</span>
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
@@ -123,24 +126,25 @@
 										<th scope="col">#</th>
 										<th scope="col">Name product</th>
 										<th scope="col" colspan="0">Price</th>
-										<th scope="col" colspan="0" class="time">Time create</th>
+										<th scope="col" colspan="0" class="time">Brand</th>
 										<th scope="col" colspan="0" class="fc">Fuction</th>
 
 									</tr>
 								</thead>
 							<tbody>
-								{{#each products}}
-									<tr>
-										<th scope="row">{{sum @index 1}}</th>
-										<td>{{this.name}}</td>
-										<td>{{this.price}}$</td>
-										<td class="time-product">@{{this.createdAt}}</td>
-										<td>
-										<a href="/admin/{{this._id}}" class="btn btn-link" >Edit</a>
-										<a  href="" class="btn btn-link" data-toggle="modal" data-target="#deleteProduct" data-id="{{this._id}}">Delete</a>
-										</td>
-									</tr>
-								{{/each}}
+								{{#each productDelete}}
+											<tr>
+												<th scope="row">{{sum @index 1}}</th>
+												<td>{{this.name}}</td>
+												<td>{{this.price}}$</td>
+												<td>{{this.brand}}</td>
+												<td>
+													<a href="" class="btn btn-link btnRestore" data-id="{{this._id}}">Restore</a>
+													<a  href="" class="btn btn-link" data-toggle="modal" data-target="#deleteForever" data-id="{{this._id}}">Delete</a>
+												</td>
+											</tr>
+
+										{{/each}}
 							</tbody>
 						</table>
 					</div>
@@ -149,51 +153,60 @@
 		
 		</div>
 
+
 {{!--Confirm delete COurse--}}
-<div class="modal" id="deleteProduct"  tabindex="-1" role="dialog">
+<div class="modal" id="deleteForever"  tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Delete product</h5>
+        <h5 class="modal-title">Delete</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>Deleted products will be moved to the trash</p>
+        <p>Data will not be recoverable</p>
       </div>
       <div class="modal-footer">
-        <button id="btn-delete" type="button" class="btn btn-danger">Delete</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cencel</button>
+        <button id="btn-delete-product" type="button" class="btn btn-danger">Delete</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
       </div>
     </div>
   </div>
-  
 </div>
-<form name="delete-form" method="POST"></form>	
 
-<script>
+ <form name="restore-form" method="POST"></form>
+ <form name="delete-forever-form" method="POST"></form>
+
+ <script>
 
     document.addEventListener('DOMContentLoaded', function() {
-
-        var deleteForm = document.forms['delete-form'];
+        var deleteForeverForm = document.forms['delete-forever-form'];
         var productID;
-        var btnDelete= document.getElementById('btn-delete');
-            $('#deleteProduct').on('show.bs.modal', function (event) {
+        var btnDeleteProduct = document.getElementById('btn-delete-product');
+            $('#deleteForever').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget) ;
             productID = button.data('id');
     })
-        
-        btnDelete.onclick = function() {
-        deleteForm.action = '/products/' + productID  + '?_method=DELETE' 
-        deleteForm.submit();
+
+         btnDeleteProduct.onclick = function() {
+        deleteForeverForm.action = '/products/' + productID  + '/force?_method=DELETE' 
+        deleteForeverForm.submit();
         }
 
-        
-})
+
+        var restoreForm = document.forms['restore-form'];
+        var Restorebtn = $('.btnRestore');
+          Restorebtn.click(function(e) {
+              e.preventDefault();
+              var productID = $(this).data('id');
+               restoreForm.action = '/products/' + productID  + '/restore?_method=PATCH';
+              restoreForm.submit();
+            
+      });
+});
 
 </script>
-
 
 
         <script>
@@ -236,9 +249,9 @@ function loadTheme() {
         </script>
 
 
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   			  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    			 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
 </body>
 </html>

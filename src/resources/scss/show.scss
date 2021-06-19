@@ -599,23 +599,19 @@ body {
 }
 .right .title {
     text-align: center;
-    margin-top: 30px;
+   
+    height: 40px;
     margin-bottom: 25px; 
+    background-color: rgba(0, 0, 0, 0.301);
 }
 
 .right .title h3 {
     position: relative;
    right: 0px;
+   height: 40px;
+   line-height: 40px;
 }
-.right .title h3::after {
-    content: '';
-    position: absolute;
-   left: 0px;
-   bottom: 0;
-   background-color: #000;
-   width: 100%;
-   height: 1px;
-}
+
 
 
 .product p {

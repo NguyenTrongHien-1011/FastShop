@@ -6,16 +6,32 @@ const { mongooseToObject } = require('../../until/mongoose')
 class AdminController {
    
     admin(req, res, next) {
-        Promise.all([Product.findById(req.params.id), Product.findDeleted({}),Product.find({}),Product.countDocumentsDeleted()])
-        .then(([productEdit,productDelete,products, deleteCount]) =>
-        res.render('admin', {
+        Product.find({})
+        .then(products => {
+            res.render('admin', { products: muntipleMongooseToObject(products) })
+        })
+        .catch(next)
+    }
+    deleteProduct(req, res, next) {
+        Promise.all([Product.findDeleted({}),Product.countDocumentsDeleted()])
+        .then(([productDelete, deleteCount]) =>
+        res.render('delete-product', {
             deleteCount,
-            productEdit: mongooseToObject(productEdit),
             productDelete: muntipleMongooseToObject(productDelete),
-            products: muntipleMongooseToObject(products),
         })
         )
         .catch(error => next(error))
+    }
+  
+    add(req, res, next) {
+        res.render('addproduct')
+      }
+      edit(req, res, next) {
+        Product.findById(req.params.id)
+        .then(productEdit => {
+            res.render('edit', { productEdit: mongooseToObject(productEdit) })
+        })
+        .catch(next)
     }
 }
 module.exports = new AdminController

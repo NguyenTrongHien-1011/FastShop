@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/css/edit.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="news.html" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-tachometer-alt"></i>
+					</div>
+					<span>
+						Dashboard
+					</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link ">
+					<div>
+						<i class="fab fa-accusoft"></i>
+					</div>
+					<span>My products</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-tasks"></i>
+					</div>
+					<span>Morbi</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link active">
+					<div>
+						<i class="fas fa-spinner"></i>
+					</div>
+					<span>Edit</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-check-circle"></i>
+					</div>
+					<span>Pellentesque</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-bug"></i>
+					</div>
+					<span>Morbi</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-chart-line"></i>
+					</div>
+					<span>Praesent</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-book-open"></i>
+					</div>
+					<span>Pellentesque</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-adjust"></i>
+					</div>
+					<span>Morbi</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fab fa-algolia"></i>
+					</div>
+					<span>Praesent</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-audio-description"></i>
+					</div>
+					<span>Pellentesque</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	<!-- main content -->
+	<div class="wrapper">
+		
+		<div class="row">
+			<div class="col-8 col-m-12 col-sm-12">
+				<div class="card">
+					<div class="card-header">
+						<h3>
+							Edit product
+						</h3>
+						<i class="fas fa-ellipsis-h"></i>
+					</div>
+					<div class="card-content">
+					
+						
+								<form  method="POST" action="/products/{{productEdit._id}}?_method=PUT">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Name product</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" name="name"  value="{{productEdit.name}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Brand</label>
+                                <select class="form-control" id="exampleFormControlSelect1" name="brand" value={{productEdit.brand}} spellcheck="false">
+                                    <option>Nike</option>
+                                    <option >Adidas</option>
+                                    <option>Puma</option>
+                                    <option>Merrell</option>
+                                    <option>Gucci</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Link image</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" name="image"  value="{{productEdit.image}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Price</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" name="price" value="{{productEdit.price}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Description</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="3">{{productEdit.description}}</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Edit</button>
+                         </form>
+							
+							
+					
+				</div>
+			</div>
+			
+		</div>
+
+        <script>
+            const primaryColor = '#4834d4'
+const warningColor = '#f0932b'
+const successColor = '#6ab04c'
+const dangerColor = '#eb4d4b'
+
+const themeCookieName = 'theme'
+const themeDark = 'dark'
+const themeLight = 'light'
+
+const body = document.getElementsByTagName('body')[0]
+
+
+
+function getCookie(cname) {
+  var name = cname + "="
+  var ca = document.cookie.split(';')
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1)
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length)
+    }
+  }
+  return ""
+}
+
+loadTheme()
+
+function loadTheme() {
+	var theme = getCookie(themeCookieName)
+	body.classList.add(theme === "" ? themeLight : theme)
+}
+
+
+        </script>
+</body>
+</html>

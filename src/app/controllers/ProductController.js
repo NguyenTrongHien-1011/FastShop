@@ -60,7 +60,7 @@ class ProductController {
    // [DELETE] /products/:id/force
     deleteForever(req, res, next) {
         Product.deleteOne({_id: req.params.id})
-        .then(() => res.redirect('/admin'))
+        .then(() => res.redirect('/admin/products-deleted'))
         .catch(next)
      }
     

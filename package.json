@@ -12,6 +12,7 @@
     "show": "node-sass  --w src/resources/scss/show.scss src/public/css/show.css",
     "contact": "node-sass --w src/resources/scss/contact.scss src/public/css/contact.css",
     "admin": "node-sass --w src/resources/scss/admin.scss src/public/css/admin.css",
+    "edit": "node-sass --w src/resources/scss/edit.scss src/public/css/edit.css",
     "about": "node-sass --w src/resources/scss/about.scss src/public/css/about.css",
     "location": "node-sass --w src/resources/scss/location.scss src/public/css/location.css",
     "login": "node-sass --w src/resources/scss/login.scss src/public/css/login.css",

@@ -45,9 +45,6 @@
 * {
   box-sizing: border-box; }
 
-a {
-  text-decoration: none; }
-
 body {
   font-family: 'Roboto', sans-serif;
   background: var(--main-bg-color);
@@ -483,8 +480,7 @@ body {
 
 .card-content {
   padding: 20px;
-  overflow-x: auto;
-  height: 578px; }
+  height: 600px; }
 
 table {
   border-collapse: collapse;

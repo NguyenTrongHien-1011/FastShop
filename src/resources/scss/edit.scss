@@ -56,9 +56,7 @@
 * {
 	box-sizing: border-box;
 }
-a {
-	text-decoration: none;
-}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	background: var(--main-bg-color);
@@ -327,7 +325,6 @@ body {
 	text-decoration: none;
 }
 
-
 .sidebar-nav-link i {
 	font-size: 1.5rem;
 	color: var(--second-color);
@@ -519,8 +516,7 @@ body {
 
 .card-content {
 	padding: 20px;
-	overflow-x: auto;
-	height: 578px;
+	height: 600px;
 }
 
 table {
