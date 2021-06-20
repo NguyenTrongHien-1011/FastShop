@@ -40,8 +40,8 @@ body {
 	margin: 0;
 }
 
-#btn {
-	cursor: pointer;
+#btn-click {
+	display: none;
 }
 
 .wrapper {
@@ -222,6 +222,9 @@ table th {
 @media (max-width: 500px) {
 	#small-menu {
 		display: none;
+	}
+	#btn-click {
+		display: block;
 	}
 	.wrapper {
 		padding: 10px;

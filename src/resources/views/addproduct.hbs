@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="/css/edit.css">
+	<link rel="stylesheet" type="text/css" href="/css/admin.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
 	{{> header}}
-    	<div class="sidebar">
+    	<div class="sidebar" id="small-menu">
 		<ul class="sidebar-nav">
 			<li class="sidebar-nav-item">
 				<a href="/admin" class="sidebar-nav-link " style="text-decoration: none;">
 					<div>
-						<i class="fas fa-tachometer-alt"></i>
+						<i class="fa fa-product-hunt" aria-hidden="true"></i>
 					</div>
+					
 						<span>My product</span>
 				</a>
 			</li>
 			<li class="sidebar-nav-item">
-				<a href="/admin/add-new-product" class="sidebar-nav-link active" style="text-decoration: none;">
+				<a href="/admin/add-new-product" class="sidebar-nav-link active " style="text-decoration: none;">
 					<div>
-						<i class="fab fa-accusoft"></i>
+						<i class="fa fa-plus-circle" aria-hidden="true"></i>
 					</div>
 					<span>Add new products</span>
 				</a>
@@ -32,57 +33,25 @@
 			<li  class="sidebar-nav-item">
 				<a href="/admin/products-deleted" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
-						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-backspace    "></i>
 					</div>
 					<span>Product-deleted</span>
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link" style="text-decoration: none;">
+				<a href="/login" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
-						<i class="fas fa-bug"></i>
+						<i class="fas fa-sign-in-alt    "></i>
 					</div>
 					<span>Login</span>
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link" style="text-decoration: none;">
+				<a href="/products" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
-						<i class="fas fa-chart-line"></i>
+						<i class="fas fa-store    "></i>
 					</div>
 					<span>My shop</span>
-				</a>
-			</li>
-			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link" style="text-decoration: none;">
-					<div>
-						<i class="fas fa-book-open"></i>
-					</div>
-					<span>Pellentesque</span>
-				</a>
-			</li>
-			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link">
-					<div>
-						<i class="fas fa-adjust"></i>
-					</div>
-					<span>Morbi</span>
-				</a>
-			</li>
-			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link" style="text-decoration: none;">
-					<div>
-						<i class="fab fa-algolia"></i>
-					</div>
-					<span>Praesent</span>
-				</a>
-			</li>
-			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link" style="text-decoration: none;">
-					<div>
-						<i class="fas fa-audio-description"></i>
-					</div>
-					<span>Pellentesque</span>
 				</a>
 			</li>
 		</ul>
@@ -92,13 +61,13 @@
 	<div class="wrapper">
 		
 		<div class="row">
-			<div class="col-8 col-m-12 col-sm-12">
+			<div class="col-12 col-m-12 col-sm-12">
 				<div class="card">
 					<div class="card-header">
 						<h3>
 							Add new product
 						</h3>
-						<i class="fas fa-ellipsis-h"></i>
+							<i class="fas fa-bars" id="btn-click"></i>
 					</div>
 					<div class="card-content">
 					
@@ -139,7 +108,17 @@
 			</div>
 			
 		</div>
-
+ <script>
+     document.getElementById("btn-click").onclick = function() {Function()};
+    function Function() {
+         var x = document.getElementById("small-menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+        }
+    </script>
         <script>
             const primaryColor = '#4834d4'
 const warningColor = '#f0932b'

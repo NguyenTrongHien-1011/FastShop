@@ -59,10 +59,11 @@ a {
     margin: auto;
 }
 .device .bottom h2 {
+    
     color: $bgred;
     font-size: 34px;
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     padding-top: 10px;
 }
 .device .bottom h2:after {
@@ -70,7 +71,7 @@ a {
    position: absolute;
    bottom: 0;
    left: 0;
-   width: 10%;
+   width: 9%;
    height: 3px;
    background: $bgred;
     color: $bgred;
@@ -500,7 +501,7 @@ h1.tt {
     .product .prd:after 
     { 
         bottom: -10px;
-        width: 120%;
+        width: 100%;
         left: -10px;
     }
     h1.tt:after {
