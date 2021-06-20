@@ -242,6 +242,17 @@ button {
   position: relative;
   z-index: 1; }
 
+.about-img2 {
+  width: 100%;
+  float: left;
+  background-color: #ffffff;
+  height: auto;
+  margin-left: -20px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px 0px;
+  position: relative;
+  z-index: 0; }
+
 .new_bt {
   width: 18%;
   float: left;
@@ -317,14 +328,18 @@ button {
   width: 100%;
   height: 400px;
   float: left;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 .shoes-img3 img {
-  margin-left: 100px;
+  margin-left: 0px;
   width: 400px;
   height: 400px;
   float: left;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 .collection_text {
   width: 100%;
@@ -438,9 +453,81 @@ button {
 .brand .nike img {
   width: 90%; }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .header_section {
     font-size: 13px; }
   .swiper-container .swiper-slide {
     width: 200px;
-    height: 200px; } }
+    height: 200px; }
+  .shoes-img3 {
+    width: 100%;
+    height: 400px;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+  .shoes-img3 img {
+    margin-left: 0px;
+    width: 350px;
+    height: 350px;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+  .new_bt, .seemore_bt {
+    display: none; }
+  .about-img {
+    margin-left: 0; }
+  .tx {
+    text-align: center; }
+  .about-img2 {
+    margin-left: 0px;
+    margin-bottom: 100px; }
+  .banner_taital {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 0; }
+  .banner_text, .mens_text {
+    font-size: 20px; }
+  .buy_bt {
+    width: 40%;
+    height: 40px;
+    font-size: 13pt;
+    margin-left: 0; }
+  .more_bt {
+    width: 40%;
+    height: 40px;
+    color: #ffffff;
+    background-color: #ffffff;
+    color: #ff4e5b;
+    font-size: 13pt;
+    margin-left: 25px; }
+  .new_text {
+    margin-top: 100px;
+    text-align: center; }
+  .header_section {
+    width: 100%;
+    height: 100%; } }
+
+@media (max-width: 600px) {
+  .shoes_img, .more_bt, .buy_bt {
+    display: none; }
+  .new_text {
+    margin-top: 0; }
+  .header_section {
+    width: 100%;
+    float: left;
+    background-image: url(/img//images/banner.png);
+    height: 100%;
+    padding: 10px 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 67px; }
+  .banner_taital {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 0; } }

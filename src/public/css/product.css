@@ -337,6 +337,8 @@ h1.tt:after {
     position: absolute;
     top: 0;
     left: 0; }
+  .content .box .size {
+    margin-top: 16px; }
   .content .box .size .cricle-size {
     position: absolute;
     right: 10px; }
