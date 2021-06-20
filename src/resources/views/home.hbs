@@ -12,6 +12,8 @@
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
+	    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -57,6 +59,43 @@
 			</div>
 		</div>
 	</div>
+
+	  {{!-- end  --}}
+       <!-- Swiper -->
+	    <h1 class="new_text" style="text-align: center; padding-top: 80px;"><strong>Leter Products</strong></h1>
+       <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1515555230216-82228b88ea98?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1612902377756-414b2139d5e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1512990414788-d97cb4a25db3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1619223517625-3ec487a7c1d1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxzaG9lc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1542219550-37153d387c27?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      {{!-- end slide --}}
 	<!-- header section end -->
 	<!-- new collection section start -->
     <div class="layout_padding collection_section">
@@ -137,5 +176,30 @@
         </div>
       </div>
     
+
+	 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+         loop: true,
+         autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        });
+      </script>
+
    </body>
 </html>

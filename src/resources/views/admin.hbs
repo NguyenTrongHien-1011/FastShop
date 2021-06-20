@@ -10,67 +10,52 @@
     <title>Document</title>
 </head>
 <body>
-    {{> header}}
-    	<div class="sidebar">
+	{{> header}}
+    	<div class="sidebar" id="small-menu">
 		<ul class="sidebar-nav">
 			<li class="sidebar-nav-item">
-				<a href="/admin" class="sidebar-nav-link active">
+				<a href="/admin" class="sidebar-nav-link active" style="text-decoration: none;">
 					<div>
-						<i class="fas fa-tachometer-alt"></i>
+						<i class="fa fa-product-hunt" aria-hidden="true"></i>
 					</div>
+					
 						<span>My product</span>
 				</a>
 			</li>
 			<li class="sidebar-nav-item">
-				<a href="/admin/add" class="sidebar-nav-link ">
+				<a href="/admin/add-new-product" class="sidebar-nav-link " style="text-decoration: none;">
 					<div>
-						<i class="fab fa-accusoft"></i>
+						<i class="fa fa-plus-circle" aria-hidden="true"></i>
 					</div>
 					<span>Add new products</span>
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="/admin/add-new-product" class="sidebar-nav-link">
+				<a href="/admin/products-deleted" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
-						<i class="fas fa-tasks"></i>
-					</div>
-					<span>Add</span>
-				</a>
-			</li>
-			<li  class="sidebar-nav-item">
-				<a href="/admin/edit" class="sidebar-nav-link">
-					<div>
-						<i class="fas fa-spinner"></i>
-					</div>
-					<span>Edit</span>
-				</a>
-			</li>
-			<li  class="sidebar-nav-item">
-				<a href="/admin/products-deleted" class="sidebar-nav-link">
-					<div>
-						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-backspace    "></i>
 					</div>
 					<span>Product-deleted</span>
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link">
+				<a href="/login" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
-						<i class="fas fa-bug"></i>
+						<i class="fas fa-sign-in-alt    "></i>
 					</div>
-					<span>Morbi</span>
+					<span>Login</span>
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link">
+				<a href="/products" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
-						<i class="fas fa-chart-line"></i>
+						<i class="fas fa-store    "></i>
 					</div>
-					<span>Praesent</span>
+					<span>My shop</span>
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link">
+				<a href="#" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
 						<i class="fas fa-book-open"></i>
 					</div>
@@ -86,7 +71,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link">
+				<a href="#" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
 						<i class="fab fa-algolia"></i>
 					</div>
@@ -94,7 +79,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link">
+				<a href="#" class="sidebar-nav-link" style="text-decoration: none;">
 					<div>
 						<i class="fas fa-audio-description"></i>
 					</div>
@@ -108,13 +93,16 @@
 	<div class="wrapper">
 		
 		<div class="row">
-			<div class="col-8 col-m-12 col-sm-12">
+			<div class="col-12 col-m-12 col-sm-12">
 				<div class="card">
 					<div class="card-header">
-						<h3>
+						<h3 >
+							
 							My products
 						</h3>
-						<i class="fas fa-ellipsis-h"></i>
+						<i class="fas fa-bars" id="btn-show"></i>
+						
+						
 					</div>
 					<div class="card-content">
 						<table>
@@ -194,7 +182,17 @@
 
 </script>
 
-
+ <script>
+     document.getElementById("btn-show").onclick = function() {myFunction()};
+    function myFunction() {
+         var x = document.getElementById("small-menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+        }
+    </script>
 
         <script>
             const primaryColor = '#4834d4'

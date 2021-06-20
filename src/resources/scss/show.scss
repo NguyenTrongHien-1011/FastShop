@@ -549,7 +549,7 @@ body {
     height: 600px;
     background: #fff;
     margin-left: 10px;
-    overflow-y: scroll;
+   
 
 }
 .left .title {
@@ -667,4 +667,8 @@ body {
 }
 .rate {
     
+}
+.sp {
+    overflow-y: scroll;
+    height: 550px;
 }

@@ -62,7 +62,7 @@ a {
     color: $bgred;
     font-size: 34px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding-top: 10px;
 }
 .device .bottom h2:after {
@@ -78,6 +78,7 @@ a {
 .device .bottom p {
     width: 100%;
 }
+
 
 h1.tt {
     text-align: center;
@@ -105,12 +106,12 @@ h1.tt:after {
     width: 70%;
     height: 100%;
     display: flex;
-    justify-content: center;
+   
     align-items: center;
     flex-wrap: wrap;
     margin: auto; 
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .product .prd {
     width: 200px;
@@ -129,7 +130,6 @@ h1.tt:after {
     height: 300px;
     display: flex;
     overflow: hidden;
-   
     position: relative;
     
 }
@@ -630,5 +630,5 @@ h1.tt {
 
     
 }
-
-
+ 
+// slide 
