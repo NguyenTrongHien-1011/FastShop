@@ -18,6 +18,13 @@ class ProductController {
         .then(() => res.redirect('/admin'))
         .catch(next)
     }
+    cart(req, res, next) {
+        Product.find({})
+        .then(products => {
+          res.render('products/cart', { products: muntipleMongooseToObject(products) })
+        })
+        .catch(error => next(error))
+    }
 
 
      // [POST] /products/store
