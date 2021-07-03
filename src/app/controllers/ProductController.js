@@ -20,7 +20,7 @@ class ProductController {
         .catch(next)
     }
     cart(req, res, next) {
-        Cart.find({})
+        Product.find({})
         .then(products => {
           res.render('products/cart', { products: muntipleMongooseToObject(products) })
         })
