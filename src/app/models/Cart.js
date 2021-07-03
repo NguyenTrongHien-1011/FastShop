@@ -15,7 +15,7 @@ const Cart = new Schema({
   });
 
 
-  Product.plugin(mongooseDelete, {
+  Cart.plugin(mongooseDelete, {
     deleteAt: true,
     overrideMethods: 'all'
 } );
