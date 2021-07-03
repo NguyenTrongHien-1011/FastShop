@@ -1,4 +1,5 @@
 const Product = require('../models/Product')
+const Cart = require('../models/Cart')
 const { muntipleMongooseToObject } = require('../../until/mongoose')
 const { mongooseToObject } = require('../../until/mongoose')
 
@@ -19,7 +20,7 @@ class ProductController {
         .catch(next)
     }
     cart(req, res, next) {
-        Product.find({})
+        Cart.find({})
         .then(products => {
           res.render('products/cart', { products: muntipleMongooseToObject(products) })
         })
